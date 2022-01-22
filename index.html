@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+
+        <script languaje="javascript"
+        var productos=["pulseratrensapiel", "pulseranudocafe", "belulaunicornio", "belulamercado",
+         "auricularesconpantalla", "juguetepopit"];
+
+         console.log(productos.length)
+         console.log(productos[3])
+         productos.push("pantuflasdealmohada");>
+
+         let nuevoproducto= productos.unshift("pantuflasdealmohada") // Añade "__" al inicio//
+
+         let ultimo = productos.pop("juguetepopit") // Elimina "__" del final//
+
+         let primero = productos.shift(pulseratrensapiel) // Elimina "___" del inicio//
+
+         productos.sort(); // ordena la lista
+
+         var producto = productos.slice(1, 3); //copia una parte del array //
+
+         productos.splice(pantuflasdealmohada, 0,);//  cambia el contenido de un array eliminando elementos
+          //existentes y/o agregando nuevos elementos.//
+
+
+
+          const array1 = ['a', 'b', 'c'];
+          const array2 = ['d', 'e', 'f'];
+          const array3 = array1.concat(array2);
+
+          console.log(array3);
+          // expected output: Array ["a", "b", "c", "d", "e", "f"] CONCATENAR
+
+
+
+        </script>
+
+</head>
+<body>
+    <div class="page-nav">
+        <h1>TIENDITA KOZI-YAZ! </h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div>
+    <div class="page-content">
+        <div class="product-container">
+            <h3>Pulsera Trenza de piel</h3>
+            <img src="pulseratrensapiel.jpg"/>
+            <h1>$70.00</h1>
+            <button class="button-add" onclick="add('product-1', 70)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Pulsera Nudo Coffee</h3>
+            <img src="pulseranudocafe.jpg"/>
+            <h1>$50.00</h1>
+            <button class="button-add" onclick="add('product-2', 50)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Muneca Belula con Unicornio</h3>
+            <img src="belulaunicornio.jpg"/>
+            <h1>$250.00</h1>
+            <button class="button-add" onclick="add('product-3', 250)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Muneca Belula Supermercado</h3>
+            <img src="belulamercado.png"/>
+            <h1>$200.00
+           </h1>
+            <button class="button-add" onclick="add('product-4', 200)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Audifonos Inalambricos con Pantalla</h3>
+            <img src="auricularesconpantalla.jpg"/>
+            <h1>$215.00</h1>
+            <button class="button-add" onclick="add('product-5', 215)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Juguete Pop It Burbujas</h3>
+            <img src="juguetepopit.jpg" />
+            <h1>$65.00</h1>
+            <button class="button-add" onclick="add('product-6', 65)">Agregar</button>
+        </div>
+    </div>
+</body>
